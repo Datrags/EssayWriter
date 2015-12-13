@@ -11,8 +11,12 @@ class MyApp < Sinatra::Base
   post '/essay' do
     @e = InitInfo.new(params[:name])
     #e.length = params[:length]
-    @e.topic = params[:topic]
-    @e.college = params[:college]
+    @e.state = params[:state]
+    @e.com = params[:com]
+    @e.soda = params[:soda]
+    @e.mlg = params[:mlg]
+    @e.game = params[:game]
+    @e.friend= params[:friend]
 
     erb :essay
   end
