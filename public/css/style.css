@@ -1,8 +1,8 @@
-body {
-   background-color:#a5a4a2;
+*{
+   background-color:#d3d3d3;
+   font-size: 35px;
+   font-family:"Myraid Pro", "Gill Sans";
 }
-
-h1 { 
-    
-    font-family: Myriad;
+.wow {
+	font-size: 10px
 }

@@ -9,14 +9,13 @@ class MyApp < Sinatra::Base
   end
 
   post '/essay' do
-    @e = InitInfo.new(params[:name])
+    @e = InitInfo.new(params[:name].capitalize)
     #e.length = params[:length]
     @e.state = params[:state]
     @e.com = params[:com]
     @e.soda = params[:soda]
-    @e.mlg = params[:mlg]
     @e.game = params[:game]
-    @e.friend= params[:friend]
+    @e.friend= params[:friend].capitalize
 
     erb :essay
   end
